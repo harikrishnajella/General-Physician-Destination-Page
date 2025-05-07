@@ -34,7 +34,7 @@ const Filters = ({ onFilter }) => {
          location,
        };
  
-       await axios.post("http://localhost:5000/api/doctors", doctorData);
+       await axios.post("https://general-physician-backend.onrender.com/api/doctors", doctorData);
  
        setSuccess("Doctor added successfully!");
        setError(null);

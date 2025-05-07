@@ -12,7 +12,7 @@ const DestinationPage = () => {
   const fetchDoctors = async (filters = {}) => {
     try {
       const params = new URLSearchParams(filters).toString();
-      const res = await axios.get(`http://localhost:5000/api/doctors?${params}`);
+      const res = await axios.get(`https://general-physician-backend.onrender.com/api/doctors?${params}`);
       setDoctors(res.data.doctors);
       setError(null);
     } catch (err) {
